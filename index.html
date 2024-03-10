@@ -5,10 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | tailwindcss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/output.css">
 </head>
 
 <body>
+
+    <!-- Header Section Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Aril Ponco Nugroho</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary ">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary ">Tentang
+                                    Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary ">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary ">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary ">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary ">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
 
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
@@ -28,14 +80,14 @@
                         class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition-all duration-300 ease-in-out">Hubungi
                         Saya</a>
                 </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
+                <div class="mt-10 w-full self-end px-4 lg:w-1/2 lg:mt-0">
                     <div class="mt-10 relative lg:mt-0 lg:right-0">
                         <img src="src/img/profil.png" alt="arilponconugroho" srcset="" class="max-w-full mx-auto">
-                        <span class="absolute bottom-24 left-1/2 -translate-x-1/2 -z-10 md:scale-125"><svg width="400"
-                                height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <span class="absolute bottom-10 left-1/2 -translate-x-1/2 -z-10 md:scale-125"><svg
+                                viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
                                 <path fill="#14b8a6"
-                                    d="M52.5,-53C67.7,-37.3,79.5,-18.7,79.8,0.3C80,19.2,68.8,38.3,53.6,50.9C38.3,63.5,19.2,69.4,-1.4,70.8C-21.9,72.2,-43.8,69,-58.4,56.4C-73,43.8,-80.2,21.9,-76.7,3.5C-73.2,-14.9,-59,-29.9,-44.4,-45.6C-29.9,-61.3,-14.9,-77.8,1.9,-79.6C18.7,-81.5,37.3,-68.7,52.5,-53Z"
-                                    transform="translate(100 100) scale(1.2)" />
+                                    d="M56.1,-56.3C70.9,-41.3,79.7,-20.7,81.2,1.4C82.6,23.5,76.6,47,61.8,61.8C47,76.5,23.5,82.4,0.4,82C-22.7,81.6,-45.4,74.8,-61.5,60.1C-77.5,45.4,-87,22.7,-86.7,0.3C-86.4,-22.1,-76.3,-44.2,-60.3,-59.1C-44.2,-74.1,-22.1,-82,-0.7,-81.3C20.7,-80.6,41.3,-71.3,56.1,-56.3Z"
+                                    transform="translate(100 100)" />
                             </svg></span>
                     </div>
                 </div>
@@ -108,6 +160,8 @@
         </div>
     </section>
     <!-- About Section End -->
+
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
